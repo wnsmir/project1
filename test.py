@@ -21,3 +21,16 @@ def get_user_choice():
         else:
             print("잘못된 입력입니다. 다시 시도해주세요.")
 >>>>>>> branch_ec
+def play_game():
+    print("가위 바위 보 게임을 시작합니다!")
+    user_choice = get_user_choice()
+    computer_choice = get_computer_choice()
+    
+    print(f"사용자 선택: {user_choice}")
+    print(f"컴퓨터 선택: {computer_choice}")
+    
+    result = determine_winner(user_choice, computer_choice)
+    print(result)
+
+if __name__ == "__main__":
+    play_game()
